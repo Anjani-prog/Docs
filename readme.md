@@ -1,4 +1,4 @@
-#### FCM-Django
+# FCM-Django
 
 
 ### Setup ###
@@ -11,7 +11,7 @@
 4.$ django-admin startproject testsite
 5.$ pip install fcm-django   
   
-   ## edit settings.py
+   #### edit settings.py
     
      INSTALLED_APPS = (
         ...
