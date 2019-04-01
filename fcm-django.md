@@ -64,13 +64,13 @@
    shell example (run python manage.py shell from fcm-django/testsite):
    
      
-	#### Sending messages
+#### Sending messages
 
 	from fcm_django.models import FCMDevice
 	device = FCMDevice.objects.all().first()
 	device.send_message(title='title', body='message')
 
-	#### Sending messages in bulk
+#### Sending messages in bulk
 
 	from fcm_django.models import FCMDevice
 	devices = FCMDevice.objects.all()
@@ -79,7 +79,7 @@
 	devices.send_message(data={"test": "test"})
 
      
-	#### Sending messages to topic
+#### Sending messages to topic
 
 	from fcm_django.fcm import fcm_send_topic_message
 
@@ -89,7 +89,7 @@
 	This default key can be overridden by specifying a key when calling send_message. 
 	This can be used to send messages using different firebase projects.
 
-	#### from fcm_django.models import FCMDevice
+#### from fcm_django.models import FCMDevice
 
 	device = FCMDevice.objects.all().first()
 	device.send_message(title="Title", body="Message", api_key="[project 1 api key]")
