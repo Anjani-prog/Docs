@@ -6,8 +6,8 @@
 1.create a folder fcm-django
 
 2.create env & activate
-   #python3.6 -m venv env
-   #source ./venv/bin/activate
+  - `python -m virtualenv env` (or `python -m venv env` in Python 3)
+  - `. env/bin/activate`
    
 3.$ pip install django
 
