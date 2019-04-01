@@ -17,7 +17,7 @@
         ...
        ### "rest_framework",
         "fcm_django"
-       )
+       )test
 6. Create Project in firbase  (https://docs.kii.com/en/samples/push-notifications/push-notifications-android-fcm/create-project/)
    server key - Accessible under the Firebase > Project > Settings > Cloud Messaging tab.
    add this server key in settings.py
@@ -45,7 +45,7 @@
 11.run server with python manage.py runserver.
 
 
-### to test ###
+### Testing ###
  
 1.open http://localhost:8000/ and add device information
    --------- FCMDevice model fields ------------
