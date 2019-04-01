@@ -64,16 +64,33 @@
    shell example (run python manage.py shell from fcm-django/testsite):
    
      
-      Sending messages
+	#### Sending messages
 
-     from fcm_django.models import FCMDevice
-     device = FCMDevice.objects.all().first()
-     device.send_message(title='title', body='message')
-    
-     Sending messages in bulk
+	from fcm_django.models import FCMDevice
+	device = FCMDevice.objects.all().first()
+	device.send_message(title='title', body='message')
+
+	#### Sending messages in bulk
+
+	from fcm_django.models import FCMDevice
+	devices = FCMDevice.objects.all()
+	devices.send_message(title="Title", body="Message")
+	devices.send_message(title="Title", body="Message", data={"test": "test"})
+	devices.send_message(data={"test": "test"})
+
      
-     from fcm_django.models import FCMDevice
-     devices = FCMDevice.objects.all()
-     devices.send_message(title="Title", body="Message")
-     devices.send_message(title="Title", body="Message", data={"test": "test"})
-     devices.send_message(data={"test": "test"})
+	#### Sending messages to topic
+
+	from fcm_django.fcm import fcm_send_topic_message
+
+	fcm_send_topic_message(topic_name='My topic', message_body='Hello', message_title='A message')
+	Using multiple FCM server keys
+	By default the message will be sent using the FCM server key specified in the settings.py. 
+	This default key can be overridden by specifying a key when calling send_message. 
+	This can be used to send messages using different firebase projects.
+
+	#### from fcm_django.models import FCMDevice
+
+	device = FCMDevice.objects.all().first()
+	device.send_message(title="Title", body="Message", api_key="[project 1 api key]")
+	device.send_message(title="Title", body="Message", api_key="[project 2 api key]")
