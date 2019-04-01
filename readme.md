@@ -63,8 +63,17 @@
 2.add above information & send yourself a test notification with django admin actions
    shell example (run python manage.py shell from fcm-django/testsite):
    
-   
+     
+      Sending messages
+
      from fcm_django.models import FCMDevice
      device = FCMDevice.objects.all().first()
      device.send_message(title='title', body='message')
- 
+    
+     Sending messages in bulk
+     
+     from fcm_django.models import FCMDevice
+     devices = FCMDevice.objects.all()
+     devices.send_message(title="Title", body="Message")
+     devices.send_message(title="Title", body="Message", data={"test": "test"})
+     devices.send_message(data={"test": "test"})
