@@ -48,7 +48,8 @@
 ### Testing ###
  
 1.open http://localhost:8000/ and add device information
-   --------- FCMDevice model fields ------------
+   
+     --------- FCMDevice model fields ------------
 	
 	1- *registration_id (required - is FCM token)
 	2- name (optional)
