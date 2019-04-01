@@ -1,4 +1,6 @@
 # FCM-Django
+(https://github.com/xtrinch/fcm-django)
+demo(https://github.com/xtrinch/fcm-django-web-demo)
 
 
 ### Setup ###
