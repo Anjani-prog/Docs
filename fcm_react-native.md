@@ -6,7 +6,7 @@
 	$ react-native init reactTutorialApp
 	$ cd reactTutorialApp
 
-##### 2.Initial Setup(https://rnfirebase.io/docs/v5.x.x/installation/initial-setup)
+###### 2.Initial Setup(https://rnfirebase.io/docs/v5.x.x/installation/initial-setup)
      
   - Visit the Firebase console.
   - Click the Add project 
@@ -19,3 +19,14 @@
 
   - Once created you'll be redirected to the project homepage(Web,Android,Ios)
         
+### Android Installation
+
+  
+#### 1.Link RNFirebase
+	$  npm install react-native-firebase 
+	$  react-native link react-native-firebase
+
+#### 2.Setup google-services.json
+
+	
+     - Add Firebase to your Android project. (https://firebase.google.com/docs/android/setup#add_firebase_to_your_app)
