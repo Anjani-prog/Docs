@@ -29,4 +29,6 @@
 #### 2.Setup google-services.json
 
 	
-   - Add Firebase to your Android project. (https://firebase.google.com/docs/android/setup#add_firebase_to_your_app)
+   - Add Firebase to your Android project. 
+       -(https://firebase.google.com/docs/android/setup#add_firebase_to_your_app)
+       - (https://rnfirebase.io/docs/v5.x.x/installation/android)
