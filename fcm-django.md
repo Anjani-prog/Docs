@@ -4,11 +4,15 @@
 ### Setup ###
 
 1.create a folder fcm-django
+
 2.create env & activate
    #python3.6 -m venv env
    #source ./venv/bin/activate
+   
 3.$ pip install django
+
 4.$ django-admin startproject testsite
+
 5.$ pip install fcm-django   
   
    #### edit settings.py
