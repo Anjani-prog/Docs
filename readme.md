@@ -22,8 +22,8 @@
    server key - Accessible under the Firebase > Project > Settings > Cloud Messaging tab.
    add this server key in settings.py
 
-      FCM_DJANGO_SETTINGS = {
-        "FCM_SERVER_KEY": "AAAAypKpF3M:APA91bHOD5j8kLBQ4uoP-w4oKEdHpVJR5_1BAAN-WtdpUyYeKlnEtlcY4kx1PrHVsPrFMbntf0Q66I
+      	FCM_DJANGO_SETTINGS = {
+      	  "FCM_SERVER_KEY": "AAAAypKpF3M:APA91bHOD5j8kLBQ4uoP-w4oKEdHpVJR5_1BAAN-WtdpUyYeKlnEtlcY4kx1PrHVsPrFMbntf0Q66I
                       -oKlvz0RB1FYev-RYdLIv2ZlayB-Lhgmq84UnrDIexxhBkL7jojGFMxNZetYLn"
         }
 7.in urls.py
@@ -49,6 +49,7 @@
  
 1.open http://localhost:8000/ and add device information
    --------- FCMDevice model fields ------------
+	
 	1- *registration_id (required - is FCM token)
 	2- name (optional)
 	3- active (default: true)
@@ -60,7 +61,9 @@
 	
 2.add above information & send yourself a test notification with django admin actions
    shell example (run python manage.py shell from fcm-django/testsite):
-   from fcm_django.models import FCMDevice
-   device = FCMDevice.objects.all().first()
-   device.send_message(title='title', body='message')
+   
+   
+     from fcm_django.models import FCMDevice
+     device = FCMDevice.objects.all().first()
+     device.send_message(title='title', body='message')
  
