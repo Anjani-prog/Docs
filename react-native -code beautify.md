@@ -18,3 +18,21 @@
 
 
     //  call the code by placing {header()}
+    
+ ## Header
+ ### White square on Header icon press
+        <View>
+            <Header
+              outerContainerStyles={styles.topMenu}
+              centerComponent={{
+                text: 'Events',
+                style: {color: '#fff', fontWeight: 'bold', fontSize: 18}
+              }}
+              rightComponent={{
+                  icon: 'search',
+                  color: '#fff',
+                  onPress: this.toggleFiltersBox,
+                  underlayColor: '#64b5f6' // <-- this does the magic
+              }}
+            />
+        </View>
