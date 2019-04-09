@@ -11,3 +11,7 @@ installed
   3.React Native Map components for iOS + Android (https://www.npmjs.com/package/react-native-maps)
            
            npm install react-native-maps --save
+ 
+  4. Gifted Chart(https://www.npmjs.com/package/react-native-gifted-chat)
+  
+           npm install react-native-gifted-chat --save
