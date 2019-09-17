@@ -8,7 +8,7 @@ https://medium.com/the-react-native-log/organizing-a-react-native-project-9514df
 
 ### Method 1 : 
 
-    create-react-native-app Vidhyadhan
+    create-react-native-app MyApp
     npm start 
     npm run ios
   
@@ -19,8 +19,8 @@ https://medium.com/the-react-native-log/organizing-a-react-native-project-9514df
 
 ## Running APP
     react-native start
-    react-native run-ios
-    react-native run-ios --simulator="iPhone X"
+    react-native run-ios  // ios
+    react-native run-ios --simulator="iPhone X"  //ios
     react-native run-android
 
 ## Install Dependencise
@@ -48,6 +48,7 @@ https://medium.com/the-react-native-log/organizing-a-react-native-project-9514df
    Dev settings > Debug server host & port for device
    Set localhost:8081
    Rerun the android app: react-native run-android
+   (first open the debugger and then enable debugger mode)
 
 ### Emulator Running
 
@@ -68,8 +69,9 @@ https://medium.com/the-react-native-log/organizing-a-react-native-project-9514df
  
    - settings->Dev Options->USB Debugging
   
-  #### Test ADB and Install Your Phone’s Drivers (if Needed)
-   
+ #### Test ADB and Install Your Phone’s Drivers (if Needed)
+      (android debug bridge)
+      
       $ sudo apt-get install adb
       $ adb devices (will list all devices connected)
       
@@ -79,5 +81,8 @@ https://medium.com/the-react-native-log/organizing-a-react-native-project-9514df
       $ sudo adb kill-server
       $ sudo adb start-server
       $ adb devices 
+
+#### using local database
+      python3 manage.py runserver 0:8000
 
 
